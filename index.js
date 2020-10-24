@@ -5,7 +5,7 @@ $(function(){
                 //.toLowerCase(); 소문자로 변환
                 if(navigator.userAgent.toLowerCase().match(new RegExp(smartPhone[i]))) {
                     alert('본 페이지는 PC에 최적화된 홈페이지입니다.');
-                 location = 'About_BUSTAGO_mobile.html'
+                 location = 'https://rnjsrkgus333.github.io/UXUI-BUSTAGO/mobile.html'
                 }
             }
 
@@ -41,12 +41,6 @@ $(function(){
                            $(this).parent().addClass('on');
     });
 
-    //경쟁사 분석 높이 값
-    let appht = $('.competitors .tab_menu .app').height() + 20;
-    $('.competitors .tab_menu li .tap_box').css({'top':appht});
-    let tap_boxht = $('.competitors .tab_menu li .tap_box').height()+170;
-    $('.competitors .tab_menu').css({'height':appht+tap_boxht})
-
     //키워드 width
     let keyword_wt = $('.style_box .keyword #keyword_2').width();
     $('.style_box .keyword #keyword_1').width(keyword_wt);
@@ -63,4 +57,16 @@ $(function(){
     },function(){
         $(this).animate({boxShadow:'0px 0px'},200).clearQueue();
     });
+
+    // wow
+    var wow = new WOW(
+        {
+            boxClass:     'wow',      // default
+            animateClass: 'animated', // default
+            offset:       0,          // default
+            mobile:       true,       // default
+            live:         true        // default
+        }
+    );
+    wow.init();
 });
