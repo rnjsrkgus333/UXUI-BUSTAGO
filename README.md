@@ -1,6 +1,6 @@
 # UXUI-BUSTAGO
 
-![MEGABOX-event page](./images/megabox_img.png)
+![BUSTAGO](./images/bustago_img.png)
 
 ## ABOUT
 - [포트폴리오] 버스타고 UXUI 개선 및 리디자인 설명 페이지입니다.
